@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#htmlSection">HTML</a></li>
+                <li><a href="#cssSection">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="htmlSection">
+            <h1>HTML Section</h1>
+            <div class="flashcards">
+                <div class="flashcard">
+                    <div class="front">
+                        <h2>What does HTML stand for?</h2>
+                    </div>
+                    <div class="back">
+                        <p>HyperText Markup Language</p>
+                    </div>
+                </div>
+                <div class="flashcard">
+                    <div class="front">
+                        <h2>What is the purpose of the &lt;a&gt; tag?</h2>
+                    </div>
+                    <div class="back">
+                        <p>To create hyperlinks</p>
+                    </div>
+                </div>
+                <div class="flashcard">
+                    <div class="front">
+                        <h2>Which tag is used to define a table row?</h2>
+                    </div>
+                    <div class="back">
+                        <p>&lt;tr&gt;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cssSection">
+            <h1>CSS Section</h1>
+            <div class="flashcards">
+                <div class="flashcard">
+                    <div class="front">
+                        <h2>What does CSS stand for?</h2>
+                    </div>
+                    <div class="back">
+                        <p>Cascading Style Sheets</p>
+                    </div>
+                </div>
+                <div class="flashcard">
+                    <div class="front">
+                        <h2>How do you select an element with the class "container" in CSS?</h2>
+                    </div>
+                    <div class="back">
+                        <p>.container { /* styles here */ }</p>
+                    </div>
+                </div>
+                <div class="flashcard">
+                    <div class="front">
+                        <h2>What property is used to change the text color in CSS?</h2>
+                    </div>
+                    <div class="back">
+                        <p>color</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Flashcards App</p>
+    </footer>
+
+</body>
+
+<script>
+    document.querySelectorAll('.flashcard').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+        });
+    });
+</script>
+
+</html>

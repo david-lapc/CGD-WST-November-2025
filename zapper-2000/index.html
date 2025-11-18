@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapper 2000</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 20px 40px;
+            border: none;
+            margin: 400px 20px 20px 20px;
+            font-size: 3em;
+            border-radius: 20px;
+            cursor: pointer;
+
+            &.learn-more-btn {
+                background-color: #fff;
+
+                &:hover {
+                    background-color: rgb(255, 238, 171);
+                }
+            }
+
+            &.shop-now-btn {
+                background-color: rgb(40, 133, 255);
+                color: #fff;
+
+                &:hover {
+                    background-color: rgb(0, 76, 255);
+                }
+            }
+        }
+
+        .promo-bar {
+            background: #121212;
+            color: #fff;
+            padding: 7px;
+            text-align: center;
+        }
+
+        header {
+            nav {
+                ul {
+                    list-style-type: none;
+                    text-align: center;
+                    padding: 10px 0;
+
+
+                    li {
+                        display: inline-block;
+                        padding: 2px 5px;
+
+                        a {
+                            text-decoration: none;
+                            color: #222
+                        }
+                    }
+                }
+            }
+        }
+
+        .hero-section {
+            background: url(images/skeeterzapper.png);
+            background-color: red;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: calc(100vh - (32px + 42px));
+            text-align: center;
+
+            h1 {
+                font-size: 5.5rem;
+                padding: 40px;
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.278);
+            }
+        }
+
+        .features-section {
+            text-align: center;
+            padding: 40px;
+
+            h2 {
+                font-size: 3em;
+                padding: 20px;
+            }
+
+            div {
+                width: 600px;
+                max-width: 100%;
+                margin: auto;
+
+                h3 {
+                    font-size: 1.5em;
+                    padding: 10px;
+                }
+
+                p {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 40px;
+            background-color: #bac5cf;
+
+            h2 {
+                font-size: 3em;
+            }
+
+            button.shop-now-btn {
+                margin-top: 40px;
+            }
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #121212;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--promo banner-->
+    <div class="promo-bar">
+        <p>Get 20% off on your first purchase! Use code: ZAP20</p>
+    </div>
+    <!-- navigation bar  -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html">
+                        Shop
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        about
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- hero section -->
+    <section class="hero-section">
+        <h1>Zapper-2000</h1>
+        <button class="learn-more-btn">Learn More</button>
+        <button class="shop-now-btn">Shop Now</button>
+    </section>
+
+    <!-- features section -->
+    <section class="features-section">
+        <h2>Features</h2>
+        <div class="feature">
+            <img src="images/lure.png" width="100px" alt="fishing lure image">
+            <h3>Smart Lure System</h3>
+            <p>
+                Utilizes UV light and heat to attract mosquitoes effectively.
+            </p>
+        </div>
+        <div class="feature">
+            <img src="./images/efficient.png" width="100px" alt="energy efficient image">
+            <h3>Energy Efficient</h3>
+            <p>
+                Low power consumption with rechargeable battery options.
+            </p>
+        </div>
+        <div class="feature">
+            <img src="./images/weather.png" width="100px" alt="weather resistant image">
+            <h3>Weather Resistant</h3>
+            <p>
+                Durable design suitable for outdoor use in various weather conditions.
+            </p>
+        </div>
+    </section>
+    <!-- call to action section -->
+    <section class="cta-section">
+        <h2>Ready to Experience the Zapper-2000?</h2>
+        <button class="shop-now-btn">Shop Now</button>
+    </section>
+    <!-- footer section -->
+    <footer>
+        <p>&copy; 2024 Zapper 2000. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
