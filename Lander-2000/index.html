@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapper-2000</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Momo+Trust+Display&display=swap');
+        /* font-family: "Elms Sans", sans-serif; */
+        /* font-family: "Momo Trust Display", sans-serif; */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Elms Sans", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Momo Trust Display", sans-serif;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #490e9b;
+            color: #fff;
+            height: 100svh;
+
+            .left {
+                padding: 50px;
+
+                .text-content {
+                    max-width: 600px;
+                    margin: auto;
+                }
+
+                h1 {
+                    font-size: 3em;
+                    margin-bottom: 20px;
+                }
+
+                h2 {
+                    font-size: 2em;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    margin-bottom: 30px;
+                    line-height: 1.5;
+                }
+
+                button {
+                    background-color: #fff;
+                    color: #000;
+                    border: none;
+                    padding: 15px 30px;
+                    font-size: 1.5em;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        font-weight: bold;
+                    }
+
+                    &:hover {
+                        background-color: #ffea00;
+                    }
+                }
+
+                form {
+                    margin-top: 20px;
+                    display: flex;
+
+                    input[type="email"] {
+                        flex: 1;
+                        padding: 10px;
+                        font-size: 1em;
+                        border: none;
+                        border-radius: 5px 0 0 5px;
+                    }
+
+                    button[type="submit"] {
+                        background-color: #000;
+                        color: #fff;
+                        border: none;
+                        padding: 10px 20px;
+                        font-size: 1em;
+                        cursor: pointer;
+                        border-radius: 0 5px 5px 0;
+                        font-weight: bold;
+
+                        &:hover {
+                            background-color: #001d6b;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                img {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        .features {
+            padding: 50px;
+            background-color: #f5f5f5;
+
+            .feature-item {
+                display: flex;
+                max-width: 750px;
+
+                margin: 30px auto 0;
+
+                img {
+                    margin-right: 20px;
+                }
+
+                .feature-text {
+                    h3 {
+                        font-size: 1.5em;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 1em;
+                        color: #555;
+                    }
+                }
+            }
+        }
+
+        .cta {
+            text-align: center;
+            padding: 50px;
+            background-color: #490e9b;
+            color: #fff;
+
+            h2 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            button {
+                background-color: #fff;
+                color: #000;
+                border: none;
+                padding: 15px 30px;
+                font-size: 1.5em;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #ffea00;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: bold;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="left">
+            <div class="text-content">
+                <h1>Meet Zapper-2000</h1>
+                <h2>The Bug Zapper of the Future</h2>
+                <p>
+                    Zapper-2000 is the latest innovation in pest control technology. With its advanced UV light system
+                    and
+                    eco-friendly design, it effectively attracts and eliminates flying insects while ensuring safety for
+                    humans
+                    and
+                    pets. Say goodbye to pesky bugs and hello to a bug-free environment with Zapper-2000!
+                </p>
+                <button>
+                    <a href="../Lander-2000/index.html">Learn More</a>
+                </button>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <img width="600px" src="images/zapper-hero-image.png" alt="Zapper-2000 Image">
+        </div>
+    </section>
+    <section class="features">
+        <!-- Features content goes here -->
+        <div class="feature-item">
+            <img src="../zapper-2000/images/efficient.png" alt="Efficient Icon" width="50px">
+            <div class="feature-text">
+                <h3>Efficient UV Light System</h3>
+                <p>Attracts and eliminates a wide range of flying insects effectively.</p>
+            </div>
+
+        </div>
+        <div class="feature-item">
+            <img src="../zapper-2000/images/lure.png" alt="Advanced Tech Icon" width="50px">
+            <div class="feature-text">
+                <h3>Advanced Mosquito Luring Technology</h3>
+                <p>Utilizes cutting-edge technology to lure and trap mosquitoes efficiently.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <img src="../zapper-2000/images/weather.png" alt="Weather Icon" width="50px">
+
+            <div class="feature-text">
+                <h3>Weather-Resistant Design</h3>
+                <p>Durable construction ensures optimal performance in various weather conditions.</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Experience Zapper-2000?</h2>
+        <button>
+            <a href="../Lander-2000/index.html">Buy
+                Now</a>
+        </button>
+
+    </section>
+</body>
+
+</html>
